@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh quentin@46.101.79.155 <<EOF
+ cd ~/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
